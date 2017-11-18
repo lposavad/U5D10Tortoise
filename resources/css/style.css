@@ -1,0 +1,7 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+/* Banner styles */
+.banner {
+  background-image: url("../../resources/images/glasses-bg.png");
+}
