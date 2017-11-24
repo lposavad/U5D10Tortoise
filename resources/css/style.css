@@ -1,7 +1,135 @@
-html {
+/* Universal styles */
+body {
   font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container {
+  width: 960px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
 }
 /* Banner styles */
 .banner {
   background-image: url("../../resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0rem auto auto auto;
+  height: 3rem;
+  background-color: cadetblue;
+  color: white;
+  align-items: center;
+  z-index: 20;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  height: 1.5rem;
+  margin: auto 1rem auto 2rem;
+}
+.mini {
+  display: none;
+}
+.mini, .full {
+  margin-right: 2rem;
+}
+.banner .flex {
+  justify-content: flex-end;
+}
+.bannertext {
+  display: inline-block;
+  margin-top: 14rem;
+  margin-right: -2rem;
+  padding: 0.75rem 5rem;
+  line-height: 2.4rem;
+  background-color: white;
+  color: black;
+  padding: 1.5rem 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .banner {
+    padding-top: 0rem;
+    height: 22rem;
+  }
+  .bannertext {
+    margin-top: 8rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+/*  Options Styles  */
+.options {
+  display: flex;
+  justify-content: center;
+}
+.optbox {
+  display: flex;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.optbox img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.optbox .paper-icon {
+  width: 3.5rem;
+}
+/*  Values Styles  */
+.values {
+  display: flex;
+  justify-content: center;
+}
+.valbox {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+.valboxheading {
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+/*  Footer Styles  */
+footer {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: azure;
+}
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
