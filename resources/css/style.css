@@ -16,6 +16,9 @@ h1 {
   display: flex;
 }
 @media only screen and (max-width: 960px) {
+  body {
+    line-height: 1rem;
+  }
   .container {
     width: 100%;
   }
@@ -33,7 +36,6 @@ h1 {
   display: flex;
   position: relative;
   justify-content: space-between;
-  width: 960px;
   margin: 0rem auto auto auto;
   height: 3rem;
   background-color: cadetblue;
@@ -82,6 +84,30 @@ h1 {
     font-size: 1.33rem;
   }
 }
+@media only screen and (max-width: 540px) {
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .bannertext {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 9rem;
+    padding: 1rem;
+    line-height: 1rem;
+  }
+  .full, .logo span {
+    display: none;
+  }
+  .mini {
+    display: flex;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
 /*  Options Styles  */
 .options {
   display: flex;
@@ -104,6 +130,19 @@ h1 {
 .optbox .paper-icon {
   width: 3.5rem;
 }
+@media only screen and (max-width: 540px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem auto;
+   }
+   .optbox {
+     height: auto;
+     margin: 0.77rem;
+     font-size: 0.77rem;
+   }
+}
 /*  Values Styles  */
 .values {
   display: flex;
@@ -121,6 +160,31 @@ h1 {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 540px) {
+  .values {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   }
+   .valbox {
+     width: auto;
+     height: auto;
+     margin: 0rem 0.77rem 4rem 0.77rem;
+     font-size: 0.77rem;
+   }
+   .valboxheading {
+     display: flex;
+     margin: 0 -0.77rem;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 0.5rem 1.25rem;
+     font-weight: bold;
+   }
+   .valboxtext {
+     padding-top: 1rem;
+   }
+}
 /*  Footer Styles  */
 footer {
   display: flex;
@@ -132,4 +196,12 @@ footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
+}
+@media only screen and (max-width: 540px) {
+  footer img {
+    margin: auto;
+  }
+  footer span {
+    display: none;
+  }
 }
